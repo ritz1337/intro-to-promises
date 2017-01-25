@@ -2,7 +2,7 @@
 
 The Promise object is used for asynchronous computations. 
 
-# Learning Objects
+# Learning Objectives
 
 - Understand what a promise is
 - Use then and catch to handle errors
