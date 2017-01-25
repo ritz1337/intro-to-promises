@@ -4,7 +4,26 @@
   <title></title>
 </head>
 <body>
-
+  <div id="root"></div>
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API -->
+
+<script>
+const $root = document.querySelector('#root');
+$root.innerHTML = render(['mini', 'me', 'etc']);
+function render(friends) {
+  const list = friends.map ((p) => {
+    return `<li>${p}</li>`
+  }).join('');
+
+  return (`
+    <h1>Hello There</h1>
+    <p>Nice to meet you</p>
+    <ul>
+      ${list}
+    </ul>
+    <a href="http://www.google.com">Check me out</a>
+    `)
+}
+</script>
 </body>
 </html>
